@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi dan wisata seputar Kabupaten Banjarnegara, Jawa Tengah.">
+    <meta name="keywords" content="Banjarnegara, Wisata, Makanan, Jawa Tengah">
+    <title>BANJAR.id</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto">
+    <div class="bg-white">
+        <header class="flex flex-col items-center p-4 bg-white w-full">
+            <div class="flex justify-between items-center w-full max-w-screen-lg">
+                <h1 class="text-3xl font-bold text-green-600 text-center w-full md:w-auto">BANJAR.id</h1>
+                <nav class="hidden md:flex space-x-4">
+                    <a class="hover:text-green-700" href="index.html">HOME</a>
+                    <a class="hover:text-green-700" href="makanan.html">MAKANAN</a>
+                    <a class="hover:text-green-700" href="wisata.html">WISATA</a>
+                </nav>
+            </div>
+            <nav class="flex flex-col md:hidden space-y-2 mt-4">
+                <a class="hover:text-green-700" href="index.html">HOME</a>
+                <a class="hover:text-green-700" href="makanan.html">MAKANAN</a>
+                <a class="hover:text-green-700" href="wisata.html">WISATA</a>
+            </nav>
+            <hr class="border-t-2 border-gray-300 w-full mt-4"/>
+        </header>
+        <main class="p-8">
+            <div class="flex flex-col md:flex-row">
+                <img alt="Pemandangan malam Banjarnegara dengan tanda dan struktur yang diterangi" class="rounded-lg w-full md:w-1/2" height="300" src="WISATA/banjar1.jpg" width="400"/>
+                <div class="mt-4 md:mt-0 md:ml-8 w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">BANJARNEGARA</h2>
+                    <p class="text-gray-700">
+                        Kabupaten Banjarnegara adalah sebuah wilayah kabupaten yang terletak di provinsi Jawa Tengah, Indonesia. 
+                        Ibu kotanya berada di kecamatan Banjarnegara. Dikenal dengan wisata alam dan makanan khas yang enak.
+                        Makanya ayo kita simak beberapa informasi tentang makanan dan wisata di Banjarnegara yuk!
+                    </p>
+                    <button onclick="openMoreInfo()" class="mt-4 px-4 py-2 bg-green-600 text-white font-bold rounded hover:bg-green-700 transition">
+                        Kepoin Yuk
+                    </button>
+                    
+                    <script>
+                    function openMoreInfo() {
+                        // This could be a redirect or a modal pop-up, for example:
+                        window.location.href = ''; // Redirect to another page
+                        // Or you could open a modal with more information instead
+                    }
+                    </script>
+                    
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #b0e57c; /* Pastel green background */
+        }
+        .header {
+            background-color: #30be48;
+            padding: 10px;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            background-color: #b0e57c;
+            padding: 20px;
+            color: white;
+        }
+        .content h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .content ul li img {
+            width: 80px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .content ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        .content ul li a:hover {
+            text-decoration: underline;
+        }
+        .calendar {
+            color: rgb(0, 0, 0);
+        }
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            border: 1px solid #000000;
+            padding: 5px;
+            text-align: center;
+        }
+        .calendar th {
+            background-color: #ffffff;
+        }
+        .calendar td {
+            background-color: #ffffff;
+        }
+        .calendar .month {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .calendar .today {
+            background-color: #8dee81;
+            color: #000000;
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+            .content h2 {
+                font-size: 1.2em;
+            }
+            .content ul li img {
+                width: 60px;
+                height: 45px;
+            }
+            .calendar .month {
+                font-size: 1.2em;
+            }
+            .calendar th, .calendar td {
+                padding: 3px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="content grid grid-cols-1 md:grid-cols-3 gap-4">
+   <div>
+    <h2>
+     Objek Wisata
+    </h2>
+    <ul>
+     <li>
+      <img alt="Padang Savana Dieng" height="60" src="WISATA/savana.jpg" width="80"/>
+      <a href="savana.html">
+       Padang Savana Dieng, Salah satu tempat wisata yang Viral di Banjarnegara
+      </a>
+     </li>
+     <li>
+      <img alt="Candi Arjuna" height="60" src="WISATA/arjuna.jpg" width="80"/>
+      <a href="arjuna.html">
+       Candi Arjuna, Peninggalan Sejarah Dinasti Sanjaya 778 Masehi
+      </a>
+     </li>
+     <li>
+      <img alt="7 Wisata Alam" height="60" src="WISATA/curug7.jpg" width="80"/>
+      <a href="curug7.html">
+        Curug Pitu, Wisata Alam di Banjarnegara dengan 7 Air Terjun Bertingkat
+      </a>
+     </li>
+     <li>
+      <img alt="Famtrip Banjarnegara" height="60" src="WISATA/merdada.jpg" width="80"/>
+      <a href="merdada.html">
+        Mengenal Telaga Merdada, Telaga Terluas di Dataran Tinggi Dieng
+
+      </a>
+     </li>
+     <li>
+        <img alt="Famtrip Banjarnegara" height="60" src="WISATA/sikidang.jpg" width="80"/>
+        <a href="sikidang.html">
+        Kawah sikidang-dieng banjarnegara
+        </a>
+       </li>
+       <li>
+        <img alt="Famtrip Banjarnegara" height="60" src="WISATA/mrican.jpg" width="80"/>
+        <a href="mrican.html">
+            Bendungan Panglima Besar Soedirman atau juga disebut sebagai Bendungan Mrica
+        </a>
+       </li>
+    </ul>
+   </div>
+   <div>
+    <h2>
+     Makanan khas banjarnegara
+    </h2>
+    <ul>
+     <li>
+      <img alt="Dieng Culture Festival" height="60" src="MAKANAN/dawet.jpg" width="80"/>
+      <a href="dawet.html">
+       Kepoin yuk resep dawet ayu yang menjadi ikon banjarnegara
+      </a>
+     </li>
+     <li>
+      <img alt="Lengger Banjarnegara" height="60" src="MAKANAN/tempe.jpg" width="80"/>
+      <a href="tempe.html">
+      kepoin yuk resep tempe mendoan yang Resep Tempe Mendoan Iris Tipis, Gurih untuk Camilan Musim Hujan        
+     </li>
+     <li>
+      <img alt="Haul Makam Ki Ageng Penjawi" height="60" src="MAKANAN/buntil.jpg" width="80"/>
+      <a href="buntil.html">
+       resep buntil kuliner khas banjarnegara
+      </a>
+     </li>
+     <li>
+      <img alt="Sadran di Desa Sirkandi" height="60" src="MAKANAN/soto.jpg" width="80"/>
+      <a href="soto.html">
+        Resep Soto Krandegan, Kuliner Sedap & Unik Khas Banjarnegara
+      </a>
+     </li>
+     <li>
+        <img alt="Sadran di Desa Sirkandi" height="60" src="MAKANAN/sirup.jpg" width="80"/>
+        <a href="sirup.html">
+        Intip Cara Membuat Sirup Salak, Oleh-oleh Khas Banjarnegara
+        </a>
+       </li>
+       <li>
+        <img alt="Sadran di Desa Sirkandi" height="60" src="MAKANAN/combro.jpg" width="80"/>
+        <a href="combro.html">
+        Resep Combro Kalipalet Khas Banjarnegara, Kombinasi Gurih dan Pedas yang Unik
+        </a>
+       </li>
+    </ul>
+   </div>
+   <div class="calendar">
+    <h2>
+     Kalender
+    </h2>
+    <div class="month">
+     Januari 2025
+    </div>
+    <table>
+     <thead>
+      <tr>
+       <th>
+        Mon
+       </th>
+       <th>
+        Tue
+       </th>
+       <th>
+        Wed
+       </th>
+       <th>
+        Thu
+       </th>
+       <th>
+        Fri
+       </th>
+       <th>
+        Sat
+       </th>
+       <th>
+        sun
+
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+       </td>
+       <td>
+       </td>
+       <td class="day" data-day="1">
+        1
+       </td>
+       <td class="day" data-day="2">
+        2
+       </td>
+       <td class="day" data-day="3">
+        3
+       </td>
+       <td class="day" data-day="4">
+        4
+       </td>
+       <td class="day" data-day="5">
+        5
+       </td>
+      </tr>
+      <tr>
+       <td class="day" data-day="6">
+        6
+       </td>
+       <td class="day" data-day="7">
+        7
+       </td>
+       <td class="day" data-day="8">
+        8
+       </td>
+       <td class="day" data-day="9">
+        9
+       </td>
+       <td class="day" data-day="10">
+        10
+       </td>
+       <td class="day" data-day="11">
+        11
+       </td>
+       <td class="day" data-day="12">
+        12
+       </td>
+      </tr>
+      <tr>
+       <td class="day" data-day="13">
+        13
+       </td>
+       <td class="day" data-day="14">
+        14
+       </td>
+       <td class="day" data-day="15">
+        15
+       </td>
+       <td class="day" data-day="16">
+        16
+       </td>
+       <td class="day" data-day="17">
+        17
+       </td>
+       <td class="day" data-day="18">
+        18
+       </td>
+       <td class="day" data-day="19">
+        19
+       </td>
+      </tr>
+      <tr>
+       <td class="day" data-day="20">
+        20
+       </td>
+       <td class="day" data-day="21">
+        21
+       </td>
+       <td class="day" data-day="22">
+        22
+       </td>
+       <td class="day" data-day="23">
+        23
+       </td>
+       <td class="day" data-day="24">
+        24
+       </td>
+       <td class="day" data-day="25">
+        25
+       </td>
+       <td class="day" data-day="26">
+        26
+       </td>
+      </tr>
+      <tr>
+       <td class="day" data-day="27">
+        27
+       </td>
+       <td class="day" data-day="28">
+        28
+       </td>
+       <td class="day" data-day="29">
+        29
+       </td>
+       <td class="day" data-day="30">
+        30
+       </td>
+       <td class="day" data-day="31">
+        31
+       </td>
+       <td>
+       </td>
+       <td>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+            const today = new Date().getDate();
+            const days = document.querySelectorAll(".day");
+            days.forEach(day => {
+                if (parseInt(day.getAttribute("data-day")) === today) {
+                    day.classList.add("today");
+                }
+            });
+        });
+  </script>
+  
+  <footer class="bg-gray-100 w-full mt-8 p-4">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <div class="flex justify-center space-x-8">
+        <a class="text-xl text-black" href="#">
+            <i class="fab fa-instagram"></i> @mudrik2309
+        </a>
+        <a class="text-xl text-black" href="#">
+            <i class="fab fa-whatsapp"></i> +6285869657950
+        </a>
+        <a class="text-xl text-black" href="#">
+            <i class="fas fa-envelope"></i> yasirmudrikkhoirulloh2323@gmail.com
+        </a>
+    </div>
+    <div class="mt-4 border-t-4 border-green-700 w-full"></div>
+</footer>
+ </body>
+</html>
